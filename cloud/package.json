@@ -1,0 +1,7 @@
+{
+  "name": "functions",
+  "private": true,
+  "workspaces": [
+    "./functions/*"
+  ]
+}
