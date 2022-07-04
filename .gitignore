@@ -1,3 +1,6 @@
-node_modules
-dist
 .idea
+
+node_modules
+
+dist
+cloud/**/*.js
