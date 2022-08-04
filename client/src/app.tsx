@@ -9,7 +9,8 @@ const App: FC<PropsWithChildren<any>> = (props) => {
       Taro.cloud.init();
     }
   }, []);
-  return props.children;
+
+  return <>{props.children}</>;
 };
 
 export default App;
