@@ -6,7 +6,10 @@ import "./app.scss";
 const App: FC<PropsWithChildren<any>> = (props) => {
   useEffect(() => {
     if (process.env.TARO_ENV === "weapp") {
-      Taro.cloud.init();
+      Taro.cloud.init({
+        env: process.env.CLOUD_ENV,
+        traceUser: true,
+      });
     }
   }, []);
 

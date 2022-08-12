@@ -6,10 +6,11 @@
 - eslint 关闭部分规则
 
 ## 使用
-- 下载该仓库
-- `cd client && yarn` 安装依赖
-- `cd cloud && yarn` 安装依赖
-- **开启 IDE 的 compile on save 功能** 确保 cloud 目录里的 ts 每次改动都被编译为了 js（鄙人使用 webstorm，vscode 未做研究）
+1. 下载该仓库
+2. `cd client && yarn` 安装小程序端依赖
+3. `cd cloud && yarn` 安装云函数依赖（注意：若要使用云函数本地调试功能，请手动前往该函数目录下运行 `yarn install`，否则调试时提示 node_modules 未安装）
+4. **开启 IDE 的 compile on save 功能**，以确保 cloud 目录里的 ts 文件每次改动都被编译为了 js（鄙人使用 webstorm 开启很简单，vscode 未做研究）
+5. 更新 `client/config` 目录下的 `dev.js` 和 `prod.js` 中的 `CLOUD_ENV` 变量，将其替换成云环境ID
 
 ## 项目结构说明
 - 云函数相关：

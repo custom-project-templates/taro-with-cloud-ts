@@ -6,9 +6,10 @@ cloud.init({
 });
 
 export const main = async (event: any, context: cloud.ICloud.WXContext) => {
-  console.log(event);
-  console.log(context, "login");
   const wxContext = cloud.getWXContext();
+  const openid = wxContext.OPENID;
+  const {} = event
+
   return {
     event,
     openid: wxContext.OPENID,

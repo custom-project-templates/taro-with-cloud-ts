@@ -1,6 +1,7 @@
 module.exports = {
   env: {
-    NODE_ENV: '"development"'
+    NODE_ENV: '"development"',
+    CLOUD_ENV: '"YOUR TEST ENVID"',
   },
   defineConstants: {
   },

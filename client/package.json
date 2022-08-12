@@ -9,8 +9,10 @@
     "css": "sass"
   },
   "scripts": {
-    "build:weapp": "taro build --type weapp",
-    "dev:weapp": "npm run build:weapp -- --watch"
+    "dev:weapp:dev": "npm run build:weapp:dev -- --watch",
+    "build:weapp:dev": "NODE_ENV=development taro build --type weapp",
+    "dev:weapp:prod": "npm run build:weapp:prod -- --watch",
+    "build:weapp:prod": "NODE_ENV=production taro build --type weapp"
   },
   "author": "",
   "license": "MIT",
