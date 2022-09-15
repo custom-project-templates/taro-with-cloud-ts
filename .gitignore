@@ -4,3 +4,4 @@ node_modules
 
 dist
 cloud/**/*.js
+!cloud/funpack.config.js

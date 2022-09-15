@@ -1,5 +1,5 @@
 {
-  "miniprogramRoot": "client/dist/",
+  "miniprogramRoot": "client/dist/functions",
   "cloudfunctionRoot": "cloud/functions/",
   "projectname": "mini-demo",
   "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
